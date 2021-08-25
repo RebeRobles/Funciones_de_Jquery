@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functions</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css">
+        <!--JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.js"></script>
+        
+        <link rel="stylesheet" href="styles.css">
+        <script>
+
+            $(document).ready(function(){
+                $('#hide').click(function(){
+                $('p').hide();
+                });
+                $('#show').click(function(){
+                $('p').show('slow');
+                });
+                $('#toggle').click(function(){
+                $('p').toggle();
+                });
+                $('#slideup').click(function(){
+                $('h5').slideUp();
+                });
+                $('#slidedown').click(function(){
+                $('h5').slideDown();
+                });
+                $('#slidetoggle').click(function(){
+                $('h5').slideToggle();
+                });
+                $('#fadein').click(function(){
+                $('img').fadeIn();
+                });
+                $('#fadeout').click(function(){
+                $('img').fadeOut();
+                });
+                $('#addclass').click(function(){
+                $('h4').addClass('text-warning');
+                });
+                $('#after').click(function(){
+                $('#p2').after('<h3>nuevo texto después</h3>');
+                });
+                $('#before').click(function(){
+                $('#p2').before('<h3>nuevo texto antes</h3>');
+                });
+                $('#append').click(function(){
+                $('#p2').append(' inserta al final de los elementos');
+                });
+                $('#attr').click(function(){
+                $('#p3').attr(text-danger);
+                });
+                $('#text').click(function(){
+                $('h2').text('rendirse jamás');
+                });
+                $('#html').click(function(){
+                $('h2').html('<i>hola mundo</i>');
+                });
+                $('#val').click(function(){
+                $('h2').val();
+                });
+            })
+        </script>
+    
+    </head>
+    <body>
+       <!--Wrapper -->
+        <div class="container text-center pt-3">
+            <h1 class="display-2  mb-5">Funciones de JQuery</h1>
+            <div class="row">
+                <div class="col">
+                    <button id="hide" type='button' class="btn btn-outline-success">Hide</button>
+                    <button id="show" type='button' class="btn btn-outline-success">Show</button>
+                    <button id="toggle" type='button' class="btn btn-outline-danger">Toggle</button>
+                </div>
+                <div class="col">
+                    <p>Click en el botón para ver como cambia este párrafo</p>
+                </div>   
+            </div><hr>
+            <div class="row">
+                <div class="col btn-group-vertical">
+                    <button id="slideup" type='button' class="btn btn-outline-success">SlideUp</button>
+                    <button id="slidedown" type='button' class="btn btn-outline-success">SlideDown</button>
+                    <button id="slidetoggle" type='button' class="btn btn-outline-danger">SlideToggle</button>
+                </div>
+                <div class="col">
+                    <h5 class="text-center display-6">Movimiento del texto</h5>
+                </div>   
+            </div><hr>
+            <div class="row">
+                <div class="col btn-group-vertical">
+                    <button id="fadein" type='button' class="btn btn-outline-success">FadeIn</button>
+                    <button id="fadeout" type='button' class="btn btn-outline-success">FadeOut</button>
+                </div>
+                <div class="col">
+                    <img class="pd-5" src="images/image3.jpg" alt="jack-picat.jpg">
+                </div>   
+            </div><hr>
+            <div class="row">
+                <div class="col">
+                    <button id="addclass" type='button' class="btn btn-outline-success">AddClass</button>
+                </div>
+                <div class="col">
+                    <h4 class="text-center display-6">Movimiento del texto</h4>
+                </div>   
+            </div><hr>
+            <div class="row">
+                <div class="col btn-group-vertical">
+                    <button id="after" type='button' class="btn btn-outline-success">After</button>
+                    <button id="before" type='button' class="btn btn-outline-success">Before</button>
+                    <button id="append" type='button' class="btn btn-outline-danger">Append</button>
+                </div>
+                <div class="col">
+                    <p id="p2" class="text-center display-6">Movimiento del texto</p>
+                </div>   
+            </div><hr>
+            <div class="row">
+                <div class="col btn-group-vertical">
+                    <button id="attr" type='button' class="btn btn-outline-success">Attr</button>
+                    <!--<button id="before" type='button' class="btn btn-outline-success">Before</button>
+                    <button id="append" type='button' class="btn btn-outline-danger">Append</button>-->
+                </div>
+                <div class="col">
+                    <p id='p3' class="text-center">como modificar con attr</p>
+                </div>   
+            </div><hr>
+            <div class="row">
+                <div class="col btn-group-vertical">
+                    <button id="text" type='button' class="btn btn-outline-success">Text</button>
+                    <button id="html" type='button' class="btn btn-outline-success">Html</button>
+                    <button id="val" type='button' class="btn btn-outline-danger">Val</button>
+                </div>
+                <div class="col">
+                    <h2 class="display-6">Retroceder nunca</h2>
+                </div>   
+            </div><hr>
+
+        
+        
+        </div>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.bundle.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </body>
+</html>
